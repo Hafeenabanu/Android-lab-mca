@@ -33,6 +33,49 @@ public class MainActivity extends AppCompatActivity {
             }
         });
         sub.setOnClickListener(new View.OnClickListener() {
+            android:layout_marginBottom="200dp"
+ android:text="*"
+ app:layout_constraintBottom_toBottomOf="parent"
+ app:layout_constraintStart_toEndOf="@+id/sum" />
+ <TextView
+ android:id="@+id/rslt"
+ android:layout_width="124dp"
+ android:layout_height="60dp"
+ android:layout_marginBottom="96dp"
+ android:gravity="center"
+ android:text="Result"
+ android:textAlignment="center"
+
+android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+ android:textSize="20sp"
+ app:layout_constraintBottom_toBottomOf="parent"
+ app:layout_constraintEnd_toEndOf="parent"
+ app:layout_constraintHorizontal_bias="0.466"
+ app:layout_constraintStart_toStartOf="parent" />
+ <EditText
+ android:id="@+id/second"
+ android:layout_width="294dp"
+ android:layout_height="70dp"
+ android:layout_marginBottom="68dp"
+ android:ems="10"
+ android:inputType="number"
+ app:layout_constraintBottom_toTopOf="@+id/sub"
+ app:layout_constraintEnd_toEndOf="parent"
+ app:layout_constraintHorizontal_bias="0.378"
+ app:layout_constraintStart_toStartOf="parent" />
+ <EditText
+ android:id="@+id/first"
+ android:layout_width="301dp"
+ android:layout_height="71dp"
+ android:layout_marginBottom="20dp"
+ android:ems="10"
+ android:inputType="number"
+ app:layout_constraintBottom_toTopOf="@+id/second"
+ app:layout_constraintEnd_toEndOf="parent"
+ app:layout_constraintHorizontal_bias="0.4"
+ app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
+
             @Override
             public void onClick(View view) {
                 int f1 = Integer.parseInt(n1.getText().toString());
